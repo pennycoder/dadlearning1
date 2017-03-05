@@ -1,12 +1,9 @@
 ﻿using System;
 
-namespace simpleCmd
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("hi dad!");
-        }
+        Console.WriteLine("hi dad!");
     }
 }

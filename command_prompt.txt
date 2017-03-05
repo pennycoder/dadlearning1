@@ -1,0 +1,189 @@
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Users\jimla_000>
+C:\Users\jimla_000>d:
+
+D:\>cd work
+
+D:\work> https://github.com/pennycoder/dadlearning1
+'https:' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\work>git clone https://github.com/pennycoder/dadlearning1
+Cloning into 'dadlearning1'...
+remote: Counting objects: 19, done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 19 (delta 4), reused 15 (delta 3), pack-reused 0
+Unpacking objects: 100% (19/19), done.
+
+D:\work>cd dl1
+The system cannot find the path specified.
+
+D:\work>pwd
+'pwd' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\work>dir
+ Volume in drive D is LENOVO
+ Volume Serial Number is 0E56-17C8
+
+ Directory of D:\work
+
+03/04/2017  09:37 AM    <DIR>          .
+03/04/2017  09:37 AM    <DIR>          ..
+03/04/2017  09:38 AM    <DIR>          dadlearning1
+               0 File(s)              0 bytes
+               3 Dir(s)   4,244,180,992 bytes free
+
+D:\work>cd dadlearning1
+
+D:\work\dadlearning1>dir
+ Volume in drive D is LENOVO
+ Volume Serial Number is 0E56-17C8
+
+ Directory of D:\work\dadlearning1
+
+03/04/2017  09:38 AM    <DIR>          .
+03/04/2017  09:38 AM    <DIR>          ..
+03/04/2017  09:38 AM             4,447 .gitignore
+03/04/2017  09:38 AM                14 README.md
+03/04/2017  09:38 AM    <DIR>          simpleCmd
+               2 File(s)          4,461 bytes
+               3 Dir(s)   4,244,180,992 bytes free
+
+D:\work\dadlearning1>cg simpleCmd
+'cg' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\work\dadlearning1>cd simpleCmd
+
+D:\work\dadlearning1\simpleCmd>cd ..
+
+D:\work\dadlearning1>ll
+'ll' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\work\dadlearning1>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\work\dadlearning1>git checkout -b jhlaflen/sample1 origin/jhlaflen/sample1
+Switched to a new branch 'jhlaflen/sample1'
+Branch jhlaflen/sample1 set up to track remote branch jhlaflen/sample1 from orig
+in.
+
+D:\work\dadlearning1>git branch
+* jhlaflen/sample1
+  master
+
+D:\work\dadlearning1>notepad text.tst
+
+D:\work\dadlearning1>git status
+On branch jhlaflen/sample1
+Your branch is up-to-date with 'origin/jhlaflen/sample1'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        text.tst
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\work\dadlearning1>git add text.tst
+
+D:\work\dadlearning1>git status
+On branch jhlaflen/sample1
+Your branch is up-to-date with 'origin/jhlaflen/sample1'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   text.tst
+
+
+D:\work\dadlearning1>git commit
+[jhlaflen/sample1 fc8f1c5] i test
+ Committer: Jim Laflen <Jim Laflen>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text.tst
+
+D:\work\dadlearning1>git status
+On branch jhlaflen/sample1
+Your branch is ahead of 'origin/jhlaflen/sample1' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+D:\work\dadlearning1>git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 259 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+To https://github.com/pennycoder/dadlearning1
+   230158e..fc8f1c5  jhlaflen/sample1 -> jhlaflen/sample1
+
+D:\work\dadlearning1>git status
+On branch jhlaflen/sample1
+Your branch is up-to-date with 'origin/jhlaflen/sample1'.
+nothing to commit, working tree clean
+
+D:\work\dadlearning1>git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/pennycoder/dadlearning1
+   fc8f1c5..e26cb84  jhlaflen/sample1 -> origin/jhlaflen/sample1
+Updating fc8f1c5..e26cb84
+Fast-forward
+ test.txt | 3 +++
+ text.tst | 1 -
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 test.txt
+ delete mode 100644 text.tst
+
+D:\work\dadlearning1>dir
+ Volume in drive D is LENOVO
+ Volume Serial Number is 0E56-17C8
+
+ Directory of D:\work\dadlearning1
+
+03/04/2017  09:59 AM    <DIR>          .
+03/04/2017  09:59 AM    <DIR>          ..
+03/04/2017  09:38 AM             4,447 .gitignore
+03/04/2017  09:38 AM                14 README.md
+03/04/2017  09:38 AM    <DIR>          simpleCmd
+03/04/2017  09:59 AM                22 test.txt
+               3 File(s)          4,483 bytes
+               3 Dir(s)   4,244,180,992 bytes free
+
+D:\work\dadlearning1>cd simpleCmd
+
+D:\work\dadlearning1\simpleCmd>dir
+ Volume in drive D is LENOVO
+ Volume Serial Number is 0E56-17C8
+
+ Directory of D:\work\dadlearning1\simpleCmd
+
+03/04/2017  09:38 AM    <DIR>          .
+03/04/2017  09:38 AM    <DIR>          ..
+03/04/2017  09:38 AM    <DIR>          simpleCmd
+03/04/2017  09:38 AM               994 simpleCmd.sln
+               1 File(s)            994 bytes
+               3 Dir(s)   4,244,180,992 bytes free
+
+D:\work\dadlearning1\simpleCmd>simpleCmd.sln
+
+D:\work\dadlearning1\simpleCmd>
